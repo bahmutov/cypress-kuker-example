@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+const isKuker = what => Cypress._.isPlainObject(what) && what.kuker
+
 const kukerMessage = ke => (ke.label ? `${ke.type}: ${ke.label}` : ke.type)
 
 context('Counter with Kuker', () => {
@@ -18,7 +20,7 @@ context('Counter with Kuker', () => {
 
         const postMessage = win.postMessage.bind(win)
         win.postMessage = (what, target) => {
-          if (Cypress._.isPlainObject(what) && what.kuker) {
+          if (isKuker(what)) {
             // trigger spy
             kuker(what, target)
 
@@ -43,7 +45,7 @@ context('Counter with Kuker', () => {
     cy.get(sel('down')).should('be.disabled')
   })
 
-  it.only('clicks up and down', () => {
+  it('clicks up and down', () => {
     cy.get(sel('up'))
       .click()
       .click()
