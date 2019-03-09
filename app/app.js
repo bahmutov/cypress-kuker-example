@@ -1,5 +1,8 @@
 import { h, app } from 'hyperapp'
 import './style.scss'
+import { BaseEmitter } from 'kuker-emitters'
+
+const kuker = BaseEmitter()
 
 /** @jsx h */
 
@@ -21,10 +24,32 @@ const view = (state, actions) => {
 
 const actions = {
   down: e => state => {
-    return { count: state.count - 1 }
+    const newState = {
+      ...state,
+      count: state.count - 1
+    }
+    kuker({
+      type: 'count',
+      label: 'down',
+      state: newState,
+      icon: 'fa-arrow-down',
+      color: '#ff0000'
+    })
+    return newState
   },
   up: e => state => {
-    return { count: state.count + 1 }
+    const newState = {
+      ...state,
+      count: state.count + 1
+    }
+    kuker({
+      type: 'count',
+      label: 'up',
+      state: newState,
+      icon: 'fa-arrow-up',
+      color: '#00ff00'
+    })
+    return newState
   }
 }
 
