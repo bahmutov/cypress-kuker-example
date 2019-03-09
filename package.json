@@ -16,6 +16,7 @@
     "example"
   ],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
+  "private": true,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahmutov/cypress-kuker-example/issues"
