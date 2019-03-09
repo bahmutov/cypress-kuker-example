@@ -14,10 +14,12 @@ const view = (state, actions) => {
   return (
     <main>
       <h1>{state.count}</h1>
-      <button onclick={actions.down} disabled={state.count <= 0}>
+      <button data-cy='down' onclick={actions.down} disabled={state.count <= 0}>
         ー
       </button>
-      <button onclick={actions.up}>＋</button>
+      <button data-cy='up' onclick={actions.up}>
+        ＋
+      </button>
     </main>
   )
 }
