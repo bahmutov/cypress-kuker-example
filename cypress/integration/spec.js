@@ -3,18 +3,26 @@
 const kukerMessage = ke => (ke.label ? `${ke.type}: ${ke.label}` : ke.type)
 
 context('Counter with Kuker', () => {
-  // every time page calls "kuker.emit"
+  // spy on Kuker messages
   let kuker
+
+  beforeEach(() => {
+    kuker = null
+  })
 
   beforeEach(() => {
     cy.visit('/', {
       onBeforeLoad (win) {
         kuker = cy.spy().as('kuker')
         // cy.spy(win, 'postMessage')
+
         const postMessage = win.postMessage.bind(win)
         win.postMessage = (what, target) => {
           if (Cypress._.isPlainObject(what) && what.kuker) {
+            // trigger spy
             kuker(what, target)
+
+            // log better message ourselves
             Cypress.log({
               name: 'kuker',
               message: kukerMessage(what),
