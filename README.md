@@ -1,4 +1,5 @@
-# cypress-kuker-example
+# cypress-kuker-example [![CircleCI](https://circleci.com/gh/bahmutov/cypress-kuker-example.svg?style=svg)](https://circleci.com/gh/bahmutov/cypress-kuker-example)
+
 > Cypress.io plus Kuler.js example
 
 ## Use
