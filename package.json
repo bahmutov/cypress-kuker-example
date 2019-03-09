@@ -1,0 +1,26 @@
+{
+  "name": "cypress-kuker-example",
+  "version": "1.0.0",
+  "description": "Cypress.io plus Kuler.js example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/cypress-kuker-example.git"
+  },
+  "keywords": [
+    "cypress-io",
+    "example"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/cypress-kuker-example/issues"
+  },
+  "homepage": "https://github.com/bahmutov/cypress-kuker-example#readme",
+  "devDependencies": {
+    "http-server": "0.11.1"
+  }
+}
