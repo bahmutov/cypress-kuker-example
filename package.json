@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "start": "parcel server ./app/index.html"
+    "start": "parcel server ./app/index.html",
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",

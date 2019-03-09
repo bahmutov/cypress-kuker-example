@@ -13,6 +13,11 @@ If you have Kuker DevTools extension installed, you should see events when you c
 
 ![Kuker extension](images/kuker-extension.png)
 
+## Cypress test
+
+![Kuker messages in Cypress test](images/kuker-in-cypress.png)
+
 ## Links
 
 - [Kuker.js](https://github.com/krasimir/kuker)
+- [Cypress.io](https://www.cypress.io)
