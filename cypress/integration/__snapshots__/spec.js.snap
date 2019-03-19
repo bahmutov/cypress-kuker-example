@@ -1,0 +1,39 @@
+exports[`Counter with Kuker > clicks up and down #0`] =
+[
+  {
+    "label": "up",
+    "state": {
+      "count": 1
+    }
+  },
+  {
+    "label": "up",
+    "state": {
+      "count": 2
+    }
+  },
+  {
+    "label": "up",
+    "state": {
+      "count": 3
+    }
+  },
+  {
+    "label": "down",
+    "state": {
+      "count": 2
+    }
+  },
+  {
+    "label": "down",
+    "state": {
+      "count": 1
+    }
+  },
+  {
+    "label": "down",
+    "state": {
+      "count": 0
+    }
+  }
+];

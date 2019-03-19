@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cypress run",
     "start": "parcel server ./app/index.html",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "dev": "start-test 1234 cy:open"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,10 @@
   "homepage": "https://github.com/bahmutov/cypress-kuker-example#readme",
   "devDependencies": {
     "cypress": "3.1.5",
+    "cypress-plugin-snapshots": "1.2.6",
     "parcel-bundler": "1.12.0",
-    "sass": "1.17.2"
+    "sass": "1.17.2",
+    "start-server-and-test": "1.7.12"
   },
   "dependencies": {
     "hyperapp": "1.2.9",
