@@ -1,4 +1,4 @@
-# cypress-kuker-example [![CircleCI](https://circleci.com/gh/bahmutov/cypress-kuker-example.svg?style=svg)](https://circleci.com/gh/bahmutov/cypress-kuker-example)
+# cypress-kuker-example [![CircleCI](https://circleci.com/gh/bahmutov/cypress-kuker-example.svg?style=svg)](https://circleci.com/gh/bahmutov/cypress-kuker-example) [![renovate-app badge][renovate-badge]][renovate-app]
 
 > Cypress.io plus Kuler.js example
 
@@ -21,3 +21,7 @@ If you have Kuker DevTools extension installed, you should see events when you c
 
 - [Kuker.js](https://github.com/krasimir/kuker)
 - [Cypress.io](https://www.cypress.io)
+- [bahmutov/todomvc-redux-kuker](https://github.com/bahmutov/todomvc-redux-kuker)
+
+[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
+[renovate-app]: https://renovateapp.com/
