@@ -29,7 +29,7 @@
     "cypress-plugin-snapshots": "1.2.9",
     "parcel-bundler": "1.12.3",
     "sass": "1.22.12",
-    "start-server-and-test": "1.10.2"
+    "start-server-and-test": "1.10.3"
   },
   "dependencies": {
     "hyperapp": "1.2.10",
