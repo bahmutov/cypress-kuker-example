@@ -28,7 +28,7 @@
     "cypress": "3.8.3",
     "cypress-plugin-snapshots": "1.4.4",
     "parcel-bundler": "1.12.4",
-    "sass": "1.32.5",
+    "sass": "1.32.6",
     "start-server-and-test": "1.12.0"
   },
   "dependencies": {
