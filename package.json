@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/bahmutov/cypress-kuker-example#readme",
   "devDependencies": {
-    "cypress": "6.9.1",
+    "cypress": "14.5.4",
     "cypress-plugin-snapshots": "1.4.4",
     "parcel-bundler": "1.12.5",
     "sass": "1.90.0",
